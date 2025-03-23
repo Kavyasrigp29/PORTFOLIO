@@ -11,39 +11,47 @@
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #111; /* Dark background */
+            background: url('Bimage.jpg') no-repeat center center fixed; /* Background Image */
+            background-size: cover;
             color: #fff;
             line-height: 1.6;
         }
+
         header {
-            background: linear-gradient(135deg, #1f1f1f, #2196F3); /* Blue and dark theme */
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for readability */
             color: #fff;
             text-align: center;
-            padding: 30px 20px;
+            padding: 40px 20px;
+            border-bottom: 4px solid #2196F3;
         }
+
         header h1 {
-            font-size: 3rem;
+            font-size: 3.5rem;
             margin-bottom: 10px;
         }
+
         header p {
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             margin-bottom: 20px;
         }
+
         nav {
             display: flex;
             justify-content: center;
-            gap: 20px;
+            gap: 30px;
             margin-bottom: 30px;
         }
+
         nav a {
             text-decoration: none;
             color: #fff;
             font-weight: 600;
-            padding: 10px 20px;
+            padding: 12px 25px;
             border: 2px solid transparent;
             border-radius: 5px;
             transition: all 0.3s ease;
         }
+
         nav a:hover {
             background: #2196F3;
             border-color: #2196F3;
@@ -52,12 +60,13 @@
 
         /* Section Styles */
         section {
-            padding: 50px 20px;
+            padding: 70px 20px;
             text-align: center;
+            backdrop-filter: blur(5px); /* Soft background blur effect */
         }
 
         section h2 {
-            font-size: 2rem;
+            font-size: 2.5rem;
             margin-bottom: 20px;
             color: #2196F3;
         }
@@ -71,21 +80,23 @@
         }
 
         .skills .card, .projects .card {
-            background: #1f1f1f;
-            padding: 20px;
+            background: rgba(0, 0, 0, 0.7); /* Dark background for cards */
+            padding: 25px;
             border-radius: 10px;
-            width: 300px;
-            transition: transform 0.3s;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            width: 280px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
         }
-        
+
         .skills .card:hover, .projects .card:hover {
             transform: scale(1.05);
+            box-shadow: 0 0 25px rgba(33, 150, 243, 0.8); /* Blue glow effect */
         }
 
         .card img {
             width: 100%;
             border-radius: 10px;
+            margin-bottom: 20px;
         }
 
         .card h3 {
@@ -108,13 +119,14 @@
             background-color: #1f1f1f;
             color: #fff;
             text-align: center;
-            padding: 20px;
+            padding: 30px 20px;
+            border-top: 4px solid #2196F3;
         }
 
         /* Responsive Design */
         @media (max-width: 768px) {
             header h1 {
-                font-size: 2.5rem;
+                font-size: 2.8rem;
             }
             nav {
                 flex-direction: column;
@@ -199,7 +211,4 @@
     </section>
 
     <footer>
-        <p>© 2025 Kavya Ganeshmurthy Packiam. All Rights Reserved. 🚀</p>
-    </footer>
-</body>
-</html>
+        <p>© 2025 Kavya Ganeshmurthy
